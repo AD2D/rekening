@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekening</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .table-container {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .table-header {
+            background-color: #f2f2f2;
+            cursor: pointer;
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+        .table-content {
+            display: none; /* Initially hidden */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        .small {
+            width: 20px; /* Small column width */
+        }
+        .large {
+            width: 500px; /* Large column width */
+        }
+    </style>
+</head>
+<body><h1>Te betalen</h1><div class="table-container"><table><thead><tr><th>Naam</th><th>Moet betalen aan</th><th>Bedrag</th></tr></thead><tbody><tr>
+ <td>Aaron</td>
+ <td>Jef</td>
+ <td>€1.33</td>
+
+</tr>
+<tr>
+ <td>Jessica</td>
+ <td>Jef</td>
+ <td>€41.36</td>
+
+</tr>
+<tr>
+ <td>Jef</td>
+ <td>Johan</td>
+ <td>€9.18</td>
+
+</tr>
+<tr>
+ <td>Jonas</td>
+ <td>Johan</td>
+ <td>€51.15</td>
+
+</tr>
+<tr>
+ <td>Jannes</td>
+ <td>Johan</td>
+ <td>€53.6</td>
+
+</tr>
+<tr>
+ <td>Tevon</td>
+ <td>Johan</td>
+ <td>€82.14</td>
+
+</tr>
+</tbody></table></div><h1>Aankopen</h1><div class="table-container"><div class="table-header" onclick="toggleTable('Colruyt 14/09 middag_table')"><strong>Colruyt 14/09 middag</strong></div><div class="table-content" id="Colruyt 14/09 middag_table"><table><thead><tr><th class="large">Item</th><th class="small">Prijs</th><th class="small">Jonas</th><th class="small">Aaron</th><th class="small">Jessica</th><th class="small">Jannes</th><th class="small">Tevon</th><th class="small">Johan</th><th class="small">Jef</th><th class="small">Betaald Door</th></tr></thead><tbody>
+<tr>
+ <td>PUR NATUR yaour bio 500g</td>
+ <td>€3.29</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>Everyday gauda</td>
+ <td>€4.98</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>2x Boulettes de volaille 300g</td>
+ <td>€5.58</td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>Filet de poulet bbq 150g</td>
+ <td>€2.78</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>2x Everyday lardons fumés 250g</td>
+ <td>€3.96</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>ECONOM élevéés au sol L 30pc</td>
+ <td>€6.99</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>Wrap poulet sweet chili 170g</td>
+ <td>€2.67</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>2x EVERYDAY sandwiches au beurre 10pc</td>
+ <td>€2.38</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>BONI pain de ferme blanc 800g</td>
+ <td>€1.4</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>BONI Salade de pâtes 600g</td>
+ <td>€4.49</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>EVERYDAY Pains au Chocolat 8pc 360g</td>
+ <td>€1.99</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>BONI petits pavés Premium 4x75g</td>
+ <td>€1.79</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>COCA-COLA Zero Sugar 2L</td>
+ <td>€2.49</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>12x EVERYDAY Eau plate 2L</td>
+ <td>€4.68</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>6x BONI eau pétillante 1L</td>
+ <td>€2.79</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>2x BONI Lait demi-écrémé Ardenne brique 1L</td>
+ <td>€2.18</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>2x EVERYDAY cacahuètes grillées-salées 250g</td>
+ <td>€1.38</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>2x CÔTE D'OR Bouchée Lait 8x25g</td>
+ <td>€6.18</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>SUZY Jumbo gaufre vanil. choco. 4x75g</td>
+ <td>€3.49</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>Filet de poulet +/-1kg</td>
+ <td>€7.39</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>aiguillettes poulet ±500g</td>
+ <td>€5.92</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>BONI Royal Gala pommes</td>
+ <td>€2.41</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>poivrons rouges</td>
+ <td>€1.63</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+</tbody></table></div></div>
+
+<div class="table-container"><div class="table-header" onclick="toggleTable('Klimmen_table')"><strong>Klimmen</strong></div><div class="table-content" id="Klimmen_table"><table><thead><tr><th class="large">Item</th><th class="small">Prijs</th><th class="small">Jonas</th><th class="small">Aaron</th><th class="small">Jessica</th><th class="small">Jannes</th><th class="small">Tevon</th><th class="small">Johan</th><th class="small">Jef</th><th class="small">Betaald Door</th></tr></thead><tbody>
+<tr>
+ <td>Inkom Klimzaal</td>
+ <td>€66.0</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>Schoentjes Klimzaal</td>
+ <td>€9.0</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+</tbody></table></div></div>
+
+<div class="table-container"><div class="table-header" onclick="toggleTable('Colruyt 14/09 avond_table')"><strong>Colruyt 14/09 avond</strong></div><div class="table-content" id="Colruyt 14/09 avond_table"><table><thead><tr><th class="large">Item</th><th class="small">Prijs</th><th class="small">Jonas</th><th class="small">Aaron</th><th class="small">Jessica</th><th class="small">Jannes</th><th class="small">Tevon</th><th class="small">Johan</th><th class="small">Jef</th><th class="small">Betaald Door</th></tr></thead><tbody>
+<tr>
+ <td>8x JUPILER Pils 5,2% canette 50cl</td>
+ <td>€9.28</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>EVERYDAY huile d'olive extra vierge 1L</td>
+ <td>€8.49</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>LAY'S chips naturel XL 275g</td>
+ <td>€1.85</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>LAY'S chips pickles XL 275g</td>
+ <td>€2.32</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>LAY'S Heinz tomato ketchup XL 275g</td>
+ <td>€2.4</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>LAY'S chips paprika XL 275g</td>
+ <td>€1.95</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>DORITOS sweet chili pepper 170g</td>
+ <td>€1.59</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+</tbody></table></div></div>
+
+<div class="table-container"><div class="table-header" onclick="toggleTable('Minigolf_table')"><strong>Minigolf</strong></div><div class="table-content" id="Minigolf_table"><table><thead><tr><th class="large">Item</th><th class="small">Prijs</th><th class="small">Jonas</th><th class="small">Aaron</th><th class="small">Jessica</th><th class="small">Jannes</th><th class="small">Tevon</th><th class="small">Johan</th><th class="small">Jef</th><th class="small">Betaald Door</th></tr></thead><tbody>
+<tr>
+ <td>Minigolf</td>
+ <td>€42.0</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>Parking Minigolf</td>
+ <td>€7.5</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+</tbody></table></div></div>
+
+<div class="table-container"><div class="table-header" onclick="toggleTable('Frietjes_table')"><strong>Frietjes</strong></div><div class="table-content" id="Frietjes_table"><table><thead><tr><th class="large">Item</th><th class="small">Prijs</th><th class="small">Jonas</th><th class="small">Aaron</th><th class="small">Jessica</th><th class="small">Jannes</th><th class="small">Tevon</th><th class="small">Johan</th><th class="small">Jef</th><th class="small">Betaald Door</th></tr></thead><tbody>
+<tr>
+ <td>Frietjes</td>
+ <td>€47.2</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Aaron</td>
+</tr>
+</tbody></table></div></div>
+
+<div class="table-container"><div class="table-header" onclick="toggleTable('Colruyt 17/09_table')"><strong>Colruyt 17/09</strong></div><div class="table-content" id="Colruyt 17/09_table"><table><thead><tr><th class="large">Item</th><th class="small">Prijs</th><th class="small">Jonas</th><th class="small">Aaron</th><th class="small">Jessica</th><th class="small">Jannes</th><th class="small">Tevon</th><th class="small">Johan</th><th class="small">Jef</th><th class="small">Betaald Door</th></tr></thead><tbody>
+<tr>
+ <td>COLRUYT jambon de parme 150g</td>
+ <td>€6.27</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>ACTIMEL Grande Bouteille Nature 645g</td>
+ <td>€2.99</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>PUR NATUR yaourt ent.gren.bio verre 500g</td>
+ <td>€3.29</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>DANONE HIPRO yaourt stracc. 0% 2x160g</td>
+ <td>€2.99</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>BONI Café glacé Espresso 330ml</td>
+ <td>€0.99</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>4x REPOMODORO pizza Prosciutto Funghi 400g</td>
+ <td>€25.16</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>Johan</td>
+</tr>
+<tr>
+ <td>FANTA Zero Sugar Orange 1,5L</td>
+ <td>€2.17</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>Johan</td>
+</tr>
+</tbody></table></div></div>
+
+<div class="table-container"><div class="table-header" onclick="toggleTable('Escaperoom_table')"><strong>Escaperoom</strong></div><div class="table-content" id="Escaperoom_table"><table><thead><tr><th class="large">Item</th><th class="small">Prijs</th><th class="small">Jonas</th><th class="small">Aaron</th><th class="small">Jessica</th><th class="small">Jannes</th><th class="small">Tevon</th><th class="small">Johan</th><th class="small">Jef</th><th class="small">Betaald Door</th></tr></thead><tbody>
+<tr>
+ <td>Geld van Jannes Escaperoom</td>
+ <td>€10.0</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Jannes</td>
+</tr>
+<tr>
+ <td>Geld van Jef Escaperoom</td>
+ <td>€90.0</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>x</td>
+ <td>Jef</td>
+</tr>
+</tbody></table></div></div>
+
+<div class="table-container"><div class="table-header" onclick="toggleTable('Kebab eten terugweg_table')"><strong>Kebab eten terugweg</strong></div><div class="table-content" id="Kebab eten terugweg_table"><table><thead><tr><th class="large">Item</th><th class="small">Prijs</th><th class="small">Jonas</th><th class="small">Aaron</th><th class="small">Jessica</th><th class="small">Jannes</th><th class="small">Tevon</th><th class="small">Johan</th><th class="small">Jef</th><th class="small">Betaald Door</th></tr></thead><tbody>
+<tr>
+ <td>Kebab eten terugweg</td>
+ <td>€33.0</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td>x</td>
+ <td>x</td>
+ <td></td>
+ <td>x</td>
+ <td>Jannes</td>
+</tr>
+</tbody></table></div></div>
+
+<script>
+    function toggleTable(tableId) {
+        const tableContent = document.getElementById(tableId);
+        if (tableContent.style.display === "none" || tableContent.style.display === "") {
+            tableContent.style.display = "block"; // Show the table
+        } else {
+            tableContent.style.display = "none"; // Hide the table
+        }
+    }
+</script>
+
+</body>
+</html>
